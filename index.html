@@ -1,57 +1,82 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>GifTastic</title>
+  <head>
+    <title>GifTastic</title>
 
-	<!-- Bootstrap Links -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">	
-	<!-- CSS Links -->
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	
-	<!-- GOOGLE FONT LINKS -->
-	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
+    <!-- Bootstrap Links -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <!-- CSS Links -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 
-</head>
-<body>
+    <!-- GOOGLE FONT LINKS -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h1 id="title">Bob's Burger World</h1>
+      <p id="title-description">
+        Bob's Burger GIFS that are sure to tickle your fancy!
+      </p>
+      <p>
+        <a
+          class="btn btn-primary btn-lg"
+          id="title-button"
+          href="#"
+          role="button"
+          >Go all out</a
+        >
+      </p>
+    </div>
 
-	<div class="jumbotron">
-	  <h1 id="title">Bob's Burger World</h1>
-	  <p id="title-description">Bobs' Burger GIFS that are sure to tickle your fancy!</p>
-	  <p><a class="btn btn-primary btn-lg" id="title-button" href="#" role="button">Go all out</a></p>
-	</div>
-	
-	<p class="intro">Click on a previously made button or enter your own search words for your favorite Bob's Burger Moments!</p>
-	
-	<div class="container">
+    <p class="intro">
+      Click on a previously made button or enter your own search words for your
+      favorite Bob's Burger Moments!
+    </p>
 
-	<div id="bb-buttons"></div>
+    <div class="container">
+      <div id="bb-buttons"></div>
 
-	<br />
+      <br />
 
-	<div class="row gif-row">
-	  	<div class="col-md-10">
-	  		<div id="gifs"></div>
-	  	</div>
-		<div class="col-md-2">
-		  	<form id="bb-character">	
+      <div class="row gif-row">
+        <div class="col-md-10"><div id="gifs"></div></div>
+        <div class="col-md-2">
+          <form id="bb-character">
+            <label for="bb-input" class="input-label">Search More: </label>
+            <input type="text" id="bb-input" /><br />
 
-	      		<label for="bb-input" class="input-label">Search More: </label>
-	      		<input type="text" id="bb-input"><br>
+            <input id="add-character" type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </div>
 
-	      		<input id="add-character" type="submit" value="Submit">
-	    	</form>
-	  	</div>
-	</div>
-	
-	</div>
+    <footer id="sticky">
+      <img class="tina" src="assets/images/Tina.png" height="50" width="50" />
+      "‘Danger’ is my middle name. But I spell it R-U-T-H.- Tina Belcher"<img
+        class="tina"
+        src="assets/images/Tina.png"
+        height="50"
+        width="50"
+      />
+    </footer>
 
-	<footer id="sticky"><img class="tina" src="assets/images/Tina.png" height="50" width="50"> "‘Danger’ is my middle name. But I spell it R-U-T-H.- Tina Belcher"<img class="tina" src="assets/images/Tina.png" height="50" width="50"></footer>
-	
-	<!-- JQUERY Link -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- JQUERY Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-	<!-- Javascript Link -->
-	<script src="assets/javascript/gif.js"></script>
-</body>
+    <!-- Javascript Link -->
+    <script src="assets/javascript/gif.js"></script>
+  </body>
 </html>
